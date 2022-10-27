@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded",()=>{
         let szulo = document.getElementById('hiba') as HTMLDivElement; 
 
         while (szulo.firstChild) {
-          szulo.removeChild(szulo.lastChild);
+          szulo.removeChild(szulo.lastChild as HTMLElement);
         }
 
         function hiba(uzenet:string){
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded",()=>{
         let kodEll = /^[0-9]{3}$/;
         let kod : string = (document.getElementById('kod') as HTMLInputElement)?.value ;
 
-        let kartyanevEll = /^[A-Za-z" "]$/;
+        let kartyanevEll = /^[A-Za-z" "]+$/;
         let kartyanev : string = (document.getElementById('kartyanev') as HTMLInputElement)?.value ;
 
 
@@ -84,11 +84,6 @@ document.addEventListener("DOMContentLoaded",()=>{
               kep.classList.add("kep")
 
               div.appendChild(kep);
-
-              let h3 = document.createElement("h3");
-              h3.textContent="Gratulálok";
-
-              div.appendChild(h3);
 
               let h4 = document.createElement("h4");
               h4.textContent= "Sikeres tranzakció!";

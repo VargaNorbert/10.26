@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
         let kartyaszam = (_f = document.getElementById('kartyaszam')) === null || _f === void 0 ? void 0 : _f.value;
         let kodEll = /^[0-9]{3}$/;
         let kod = (_g = document.getElementById('kod')) === null || _g === void 0 ? void 0 : _g.value;
-        let kartyanevEll = /^[A-Za-z" "]$/;
+        let kartyanevEll = /^[A-Za-z" "]+$/;
         let kartyanev = (_h = document.getElementById('kartyanev')) === null || _h === void 0 ? void 0 : _h.value;
         if (!nevEll.test(nev)) {
             hiba('Hibás név!');
@@ -65,9 +65,6 @@ document.addEventListener("DOMContentLoaded", () => {
             kep.src = '/src/siker3.png';
             kep.classList.add("kep");
             div.appendChild(kep);
-            let h3 = document.createElement("h3");
-            h3.textContent = "Gratulálok";
-            div.appendChild(h3);
             let h4 = document.createElement("h4");
             h4.textContent = "Sikeres tranzakció!";
             div.appendChild(h4);
