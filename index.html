@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/dist/main.js"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Fizetés</title>
+</head>
+<body>
+
+    <h1>Fizetés</h1>
+
+    <div id="alap" class="container">
+        <input id="nev" type="text" placeholder="Teljes név"> <br>
+        <input id="orszag" type="text" placeholder="Ország"> <br>
+        <input id="varos"  type="text" placeholder="Város"> <br>
+        <input id="utca" type="text" placeholder="Utca, házszám"> <br>
+        <input id="iranyito" type="number" placeholder="Irányítószám"> <br>
+        <input id="kartyaszam" type="text" placeholder="Bankkártya szám"> <br>
+        <input id="kod" type="text" placeholder="Kód"> <br>
+        <input id="kartyanev" type="text" placeholder="Bankkártyára írt név"> <br>
+
+        <div id="hiba"></div>
+
+        <button class="btn btn-info" id="gomb">Fizetés</button>
+    </div>
+    
+</body>
+</html>
